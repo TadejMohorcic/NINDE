@@ -17,7 +17,7 @@ c = abs(y4(end) - y3(end));
 d = abs(y4(end) - y2(end));
 o2 = log2(d/c);
 
-% C del naloge
-[t5,y5,ytol5,h5] = CashKarp(fun,a,b,y0,0.1,10e-9);
+% C del naloge (NE DELA)
+[t5,y5,ytol5,h5] = CashKarp(fun,a,b,y0,0.1,1e-8);
 h5(end) = [];
 o3 = max(h5)/min(h5);

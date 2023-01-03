@@ -2,10 +2,10 @@ function [x,y] = BDF(f,L,D,y0,h)
 % function [x,y] = BDF(f,L,D,y0,h)
 %
 % Funkcija BDF izvede 3-člensko BDF metodo za reševanje začetnih
-% problemov y' = f(x,y). Vhodni podatki so funkcija f, interval [L,D],
-% začetni približek y0 ter korak h. Funkcija vrne seznama x in y, prvi
-% vsebuje delilne točke intervala [L,D], drugi pa vsebuje približke y(n)
-% pri delilni točki x(n).
+% problemov y' = f(x,y). Vhodni podatki so funkcija f, interval [L,D] na
+% katerem rešujemo, približek y0 in korak h. Funkcija vrne seznam x, ki
+% vsebuje delilne točke x(n) in seznam y, ki vsebuje vrednosti y(n) pri
+% delilnih točkah iz seznama x.
 
 n = (D-L)/h;
 

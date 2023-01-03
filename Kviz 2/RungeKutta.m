@@ -1,10 +1,11 @@
 function [x,y] = RungeKutta(f,a,b,y0,h)
 % function [x,y] = RungeKutta(f,a,b,y0,h)
 %
-% Funkcija RungeKutta izvede RK metodo, podano s shemo B. Vhodni podatki so
-% funkcija f, interval [a,b], začetni približek y0 ter korak h. Funkcija
-% nam vrne seznama x, v katerem so delilne točke, ter seznam y, v katerem
-% so vrednosti y(n) pri delilni točki x(n).
+% Funkcija RungeKutta izvede RK metodo za reševanje problemov y' = f(x,y),
+% podano s shemo B. Vhodni podatki so funkcija f, interval [a,b], začetni
+% približek y0 in korak h. Funkcija vrne seznam x, v katerem so delilne
+% točke x(n) in seznam y, v katerem so vrednosti y(n) pri delilnih točkah
+% iz seznama x.
 
 n = (b-a)/h;
 

@@ -1,11 +1,12 @@
 function [x,y,ytol,h] = CashKarp(f,a,b,y0,h0,tol)
 % function [x,y,ytol,h] = CashKarp(f,a,b,y0,h0,tol)
 %
-% Funkcija CashKarp izvede RK metodo z adaptivnim korakom h0 za reševanje
-% začetnih problemov. Vhodni podatki so funkcija f, interval [a,b], začetni
-% približek y0, začetni korak h0 in toleranco tol. Funkcija nam vrne seznam
-% delilnih točk x, seznama y in ytol, v katerih so vrednosti y(n) in y~(n)
-% pri parametru x(n) ter seznam korakov h.
+% Funkcija CashKarp izvede RK metodo z adaptivnim korakom h za reševanje
+% začetnih problemov y' = f(x,y). Vhodni podatki so funkcija f, interval
+% [a,b], začetni približek y0, začetni korak h0 in toleranco tol. Funkcija
+% nam vrne seznam x, ki vsebuje delilne točke x(n), seznama y in ytol, ki
+% vsebujeta vrednosti y(n) in y~(n) pri delilnih točah iz seznama x, in
+% seznam h, v katerem so koraki h(n).
 
 q = 4;
 i = 1;
